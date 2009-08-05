@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="discography.license">
+        <field type="CharField" name="type">All Rights Reserved</field>
+        <field type="CharField" name="link"></field>
+    </object>
+    <object pk="2" model="discography.license">
+        <field type="CharField" name="type">Creative Commons Attribution 3.0 United States</field>
+        <field type="CharField" name="link">http://creativecommons.org/licenses/by/3.0/us/</field>
+    </object>
+    <object pk="3" model="discography.license">
+        <field type="CharField" name="type">Creative Commons Attribution-Noncommercial 3.0 United States</field>
+        <field type="CharField" name="link">http://creativecommons.org/licenses/by-nc/3.0/us/</field>
+    </object>
+    <object pk="4" model="discography.license">
+        <field type="CharField" name="type">Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 United States</field>
+        <field type="CharField" name="link">http://creativecommons.org/licenses/by-nc-nd/3.0/us/</field>
+    </object>
+    <object pk="5" model="discography.license">
+        <field type="CharField" name="type">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States</field>
+        <field type="CharField" name="link">http://creativecommons.org/licenses/by-nc-sa/3.0/us/</field>
+    </object>
+    <object pk="6" model="discography.license">
+        <field type="CharField" name="type">Creative Commons Attribution-No Derivative Works 3.0 United States</field>
+        <field type="CharField" name="link">http://creativecommons.org/licenses/by-nd/3.0/us/</field>
+    </object>
+    <object pk="7" model="discography.license">
+        <field type="CharField" name="type">Creative Commons Attribution-Share Alike 3.0 United States</field>
+        <field type="CharField" name="link">http://creativecommons.org/licenses/by-sa/3.0/us/</field>
+    </object>
+    <object pk="1" model="discography.pro">
+        <field type="CharField" name="name">BMI</field>
+        <field type="CharField" name="street1">3340 Peachtree Road, NE </field>
+        <field type="CharField" name="street2">Suite 570</field>
+        <field type="CharField" name="city">Atlanta</field>
+        <field type="USStateField" name="state">GA</field>
+        <field type="PositiveIntegerField" name="zip">30326</field>
+        <field type="CharField" name="link">http://bmi.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">404-261-5151</field>
+    </object>
+    <object pk="2" model="discography.pro">
+        <field type="CharField" name="name">BMI</field>
+        <field type="CharField" name="street1">8730 Sunset Blvd. </field>
+        <field type="CharField" name="street2">3rd Flr West</field>
+        <field type="CharField" name="city">West Hollywood</field>
+        <field type="USStateField" name="state">CA</field>
+        <field type="PositiveIntegerField" name="zip">90069</field>
+        <field type="CharField" name="link">http://bmi.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">310-659-9109</field>
+    </object>
+    <object pk="3" model="discography.pro">
+        <field type="CharField" name="name">BMI</field>
+        <field type="CharField" name="street1">1691 Michigan Ave.</field>
+        <field type="CharField" name="street2">Suite 350</field>
+        <field type="CharField" name="city">Miami Beach</field>
+        <field type="USStateField" name="state">FL</field>
+        <field type="PositiveIntegerField" name="zip">33139</field>
+        <field type="CharField" name="link">http://bmi.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">305-673-5148</field>
+    </object>
+    <object pk="4" model="discography.pro">
+        <field type="CharField" name="name">BMI</field>
+        <field type="CharField" name="street1">10 Music Square East </field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Nashville</field>
+        <field type="USStateField" name="state">TN</field>
+        <field type="PositiveIntegerField" name="zip">37203</field>
+        <field type="CharField" name="link">http://bmi.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">615-401-2000</field>
+    </object>
+    <object pk="5" model="discography.pro">
+        <field type="CharField" name="name">BMI</field>
+        <field type="CharField" name="street1">320 West 57th Street </field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">New York</field>
+        <field type="USStateField" name="state">NY</field>
+        <field type="PositiveIntegerField" name="zip">10019</field>
+        <field type="CharField" name="link">http://bmi.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">212-586-2000</field>
+    </object>
+    <object pk="6" model="discography.pro">
+        <field type="CharField" name="name">ASCAP</field>
+        <field type="CharField" name="street1">One Lincoln Plaza </field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">New York</field>
+        <field type="USStateField" name="state">NY</field>
+        <field type="PositiveIntegerField" name="zip">10023</field>
+        <field type="CharField" name="link">http://ascap.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">212-621-6000</field>
+    </object>
+    <object pk="7" model="discography.pro">
+        <field type="CharField" name="name">ASCAP</field>
+        <field type="CharField" name="street1">7920 W. Sunset Boulevard</field>
+        <field type="CharField" name="street2">Third Floor </field>
+        <field type="CharField" name="city">Los Angeles</field>
+        <field type="USStateField" name="state">CA</field>
+        <field type="PositiveIntegerField" name="zip">90046</field>
+        <field type="CharField" name="link">http://ascap.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">323-883-1000</field>
+    </object>
+    <object pk="8" model="discography.pro">
+        <field type="CharField" name="name">ASCAP</field>
+        <field type="CharField" name="street1">Two Music Square West </field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Nashville</field>
+        <field type="USStateField" name="state">TN</field>
+        <field type="PositiveIntegerField" name="zip">37203</field>
+        <field type="CharField" name="link">http://ascap.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">615-742-5000</field>
+    </object>
+    <object pk="9" model="discography.pro">
+        <field type="CharField" name="name">ASCAP</field>
+        <field type="CharField" name="street1">420 Lincoln Rd, Suite 385</field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Miami Beach</field>
+        <field type="USStateField" name="state">FL</field>
+        <field type="PositiveIntegerField" name="zip">33139</field>
+        <field type="CharField" name="link">http://ascap.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">305-673-3446</field>
+    </object>
+    <object pk="10" model="discography.pro">
+        <field type="CharField" name="name">ASCAP</field>
+        <field type="CharField" name="street1">950 Joseph E. Lowery Blvd. NW</field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Atlanta</field>
+        <field type="USStateField" name="state">GA</field>
+        <field type="PositiveIntegerField" name="zip">30318</field>
+        <field type="CharField" name="link">http://ascap.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">404-685-8699</field>
+    </object>
+    <object pk="11" model="discography.pro">
+        <field type="CharField" name="name"> SESAC</field>
+        <field type="CharField" name="street1">55 Music Square East</field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Nashville</field>
+        <field type="USStateField" name="state">TN</field>
+        <field type="PositiveIntegerField" name="zip">37203</field>
+        <field type="CharField" name="link">http://www.sesac.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">615-320-0055</field>
+    </object>
+    <object pk="12" model="discography.pro">
+        <field type="CharField" name="name"> SESAC</field>
+        <field type="CharField" name="street1">152 West 57th ST</field>
+        <field type="CharField" name="street2">57th Floor</field>
+        <field type="CharField" name="city">New York</field>
+        <field type="USStateField" name="state">NY</field>
+        <field type="PositiveIntegerField" name="zip">10019</field>
+        <field type="CharField" name="link">http://www.sesac.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">212-586-3450</field>
+    </object>
+    <object pk="13" model="discography.pro">
+        <field type="CharField" name="name"> SESAC </field>
+        <field type="CharField" name="street1">501 Santa Monica Blvd</field>
+        <field type="CharField" name="street2">Suite 450</field>
+        <field type="CharField" name="city">Santa Monica</field>
+        <field type="USStateField" name="state">CA</field>
+        <field type="PositiveIntegerField" name="zip">90401</field>
+        <field type="CharField" name="link">http://www.sesac.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">310-393-9671</field>
+    </object>
+    <object pk="14" model="discography.pro">
+        <field type="CharField" name="name"> SESAC</field>
+        <field type="CharField" name="street1">981 Joseph E. Lowery Blvd. N.W. </field>
+        <field type="CharField" name="street2">Ste.# 111</field>
+        <field type="CharField" name="city">Atlanta</field>
+        <field type="USStateField" name="state">GA</field>
+        <field type="PositiveIntegerField" name="zip">30318</field>
+        <field type="CharField" name="link">http://www.sesac.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">404-897-1330</field>
+    </object>
+    <object pk="15" model="discography.pro">
+        <field type="CharField" name="name"> SESAC</field>
+        <field type="CharField" name="street1">420 Lincoln Road</field>
+        <field type="CharField" name="street2">Ste. 502</field>
+        <field type="CharField" name="city">Miami</field>
+        <field type="USStateField" name="state">FL</field>
+        <field type="PositiveIntegerField" name="zip">33139</field>
+        <field type="CharField" name="link">http://www.sesac.com/</field>
+        <field type="CharField" name="contact"></field>
+        <field type="PhoneNumberField" name="phone">305-534-7500</field>
+    </object>
+    <object pk="1" model="discography.role">
+        <field type="CharField" name="name">Lead Guitar</field>
+    </object>
+    <object pk="2" model="discography.role">
+        <field type="CharField" name="name">Drums</field>
+    </object>
+    <object pk="3" model="discography.role">
+        <field type="CharField" name="name">Rhythm Guitar</field>
+    </object>
+    <object pk="4" model="discography.role">
+        <field type="CharField" name="name">Accoustic Guitar</field>
+    </object>
+    <object pk="5" model="discography.role">
+        <field type="CharField" name="name">Electric Bass</field>
+    </object>
+    <object pk="6" model="discography.role">
+        <field type="CharField" name="name">Accoustic Bass</field>
+    </object>
+    <object pk="7" model="discography.role">
+        <field type="CharField" name="name">Upright Bass</field>
+    </object>
+    <object pk="8" model="discography.role">
+        <field type="CharField" name="name">Electric Keyboards</field>
+    </object>
+    <object pk="9" model="discography.role">
+        <field type="CharField" name="name">Piano</field>
+    </object>
+    <object pk="10" model="discography.role">
+        <field type="CharField" name="name">Mixing Engineer</field>
+    </object>
+    <object pk="11" model="discography.role">
+        <field type="CharField" name="name">Producer</field>
+    </object>
+    <object pk="12" model="discography.role">
+        <field type="CharField" name="name">Accoustic Engineer</field>
+    </object>
+    <object pk="13" model="discography.role">
+        <field type="CharField" name="name">Recording Engineer</field>
+    </object>
+    <object pk="14" model="discography.role">
+        <field type="CharField" name="name">Mastering</field>
+    </object>
+    <object pk="15" model="discography.role">
+        <field type="CharField" name="name">Lead Vocals</field>
+    </object>
+    <object pk="16" model="discography.role">
+        <field type="CharField" name="name">Backing Vocals</field>
+    </object>
+    <object pk="17" model="discography.role">
+        <field type="CharField" name="name">Trumpet</field>
+    </object>
+    <object pk="18" model="discography.role">
+        <field type="CharField" name="name">Tenor Saxiphone</field>
+    </object>
+    <object pk="19" model="discography.role">
+        <field type="CharField" name="name">Alto Saxiphone</field>
+    </object>
+    <object pk="20" model="discography.role">
+        <field type="CharField" name="name">Soprano Saxiphone</field>
+    </object>
+    <object pk="21" model="discography.role">
+        <field type="CharField" name="name">Baritone Saxiphone</field>
+    </object>
+    <object pk="22" model="discography.role">
+        <field type="CharField" name="name">Trombone</field>
+    </object>
+</django-objects>

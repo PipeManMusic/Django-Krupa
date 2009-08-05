@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="discography.publisher">
+        <field type="CharField" name="name">Pipe Man Music Publishing</field>
+        <field type="CharField" name="street1">12171 Monaco Dr.</field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Brighton</field>
+        <field type="USStateField" name="state">CO</field>
+        <field type="PositiveIntegerField" name="zip">80602</field>
+        <field type="CharField" name="link">http://pipemanmusic.com/</field>
+        <field type="CharField" name="contact">dworth@pipemanmusic.com</field>
+        <field type="PhoneNumberField" name="phone">303-919-2761</field>
+        <field to="discography.pro" name="pro" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="1" model="discography.artist">
+        <field type="CharField" name="firstname">Daniel</field>
+        <field type="CharField" name="lastname">Worth</field>
+        <field to="discography.pro" name="pro" rel="ManyToOneRel">2</field>
+        <field type="DateField" name="birthday">1981-02-12</field>
+        <field type="CharField" name="birthcity">Denver</field>
+        <field type="USStateField" name="birthstate">CO</field>
+    </object>
+    <object pk="3" model="discography.song">
+        <field type="CharField" name="title">I'm At It Again</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="2" model="discography.song">
+        <field type="CharField" name="title">Apathetic</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="4" model="discography.song">
+        <field type="CharField" name="title">The One I Love</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="5" model="discography.song">
+        <field type="CharField" name="title">Don't Take It Away</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="6" model="discography.song">
+        <field type="CharField" name="title">The Grey</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="7" model="discography.song">
+        <field type="CharField" name="title">Caged Bird</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="8" model="discography.song">
+        <field type="CharField" name="title">Not My Brother Any More</field>
+        <field to="discography.publisher" name="publisher" rel="ManyToOneRel">1</field>
+        <field type="DateField" name="copyrightdate">2009-04-14</field>
+        <field type="PositiveIntegerField" name="copyrightnum"><None></None></field>
+        <field to="discography.license" name="license" rel="ManyToOneRel">1</field>
+        <field to="discography.artist" name="writer" rel="ManyToManyRel"><object pk="1"></object></field>
+    </object>
+    <object pk="2" model="discography.studio">
+        <field type="CharField" name="name">Pipe Man Music Studios</field>
+        <field type="CharField" name="street1">12171 Monaco Dr.</field>
+        <field type="CharField" name="street2"></field>
+        <field type="CharField" name="city">Brighton</field>
+        <field type="USStateField" name="state">CO</field>
+        <field type="PositiveIntegerField" name="zip">80602</field>
+        <field type="CharField" name="link">http://pipemanmusic.com/</field>
+        <field type="CharField" name="contact">dworth@pipemanmusic.com</field>
+        <field type="PhoneNumberField" name="phone">303-919-2761</field>
+    </object>
+    <object pk="1" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">2</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="2" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">3</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="3" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">4</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="4" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">5</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="5" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">6</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="6" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">7</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    </object>
+    <object pk="7" model="discography.performance">
+        <field to="discography.group" name="group" rel="ManyToOneRel"><None></None></field>
+        <field to="discography.song" name="song" rel="ManyToOneRel">8</field>
+        <field type="DateField" name="datestart">2009-04-14</field>
+        <field type="DateField" name="datestop">2009-04-14</field>
+        <field to="discography.studio" name="studio" rel="ManyToOneRel">2</field>
+    <object pk="1" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">1</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object><object pk="10"></object><object pk="11"></object><object pk="13"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="2" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">2</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="9"></object><object pk="10"></object><object pk="11"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="3" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">3</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="9"></object><object pk="10"></object><object pk="11"></object><object pk="13"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="4" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">4</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object><object pk="9"></object><object pk="10"></object><object pk="11"></object><object pk="13"></object><object pk="14"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="5" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">5</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object><object pk="6"></object><object pk="9"></object><object pk="10"></object><object pk="11"></object><object pk="13"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="6" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">7</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object><object pk="9"></object><object pk="10"></object><object pk="11"></object><object pk="13"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="7" model="discography.artistperformance">
+        <field to="discography.artist" name="artist" rel="ManyToOneRel">1</field>
+        <field to="discography.performance" name="performance" rel="ManyToOneRel">6</field>
+        <field to="discography.role" name="role" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object><object pk="9"></object><object pk="10"></object><object pk="11"></object><object pk="13"></object><object pk="15"></object><object pk="16"></object></field>
+    </object>
+    <object pk="1" model="discography.album">
+        <field type="CharField" name="title">Apathetic (Demo)</field>
+        <field type="CharField" name="catnum"></field>
+        <field type="PositiveIntegerField" name="upc"><None></None></field>
+        <field to="discography.distributor" name="distributor" rel="ManyToOneRel"><None></None></field>
+        <field type="BooleanField" name="compilation">0</field>
+        <field to="discography.performance" name="tracks" rel="ManyToManyRel"><object pk="1"></object><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="5"></object><object pk="6"></object><object pk="7"></object></field>
+        <field to="discography.label" name="label" rel="ManyToManyRel"></field>
+    </object>
+</django-objects>

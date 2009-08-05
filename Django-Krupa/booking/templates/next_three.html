@@ -1,0 +1,5 @@
+{% load humanize %}
+{% for event in next %}
+{{ event.title }}
+{{ event.date|naturalday }}
+{% endfor %}
