@@ -2,6 +2,24 @@ from django.db import models
 from django.contrib.localflavor.us.models import *
 import datetime
 
+class UpcommingEventsManager(models.Manager):
+    def get_query_set(self):
+        return super(UpcommingEventsManager, self).get_query_set().filter(date__gte=datetime.date.today())
+
+class PastEventsManager(models.Manager):
+    def get_query_set(self):
+        return super(PastEventsManager, self).get_query_set().filter(date__lt=datetime.date.today())
+
+class Type(models.Model):
+    """
+    Type provides a catagory for different types of events
+    """
+
+    type = models.CharField('Type of Event', max_length=50)
+
+    def __unicode__(self):
+        return self.type
+
 class Event(models.Model):
     """
     Event provides for tracking different types of events.
@@ -24,6 +42,10 @@ class Event(models.Model):
     created = models.DateTimeField('Creation Date', auto_now_add=True)
     edited = models.DateTimeField('Last Edited', auto_now=True)
     public = models.BooleanField('Public')
+
+    objects = models.Manager()
+    upcomming_objects = UpcommingEventsManager()
+    past_objects = PastEventsManager()
 
     class Meta:
         ordering = ['date', 'title']
@@ -58,14 +80,3 @@ class Event(models.Model):
 
     def get_date(self):
         return self.date
-    def upcomming_events(self):
-        return self.
-class Type(models.Model):
-    """
-    Type provides a catagory for different types of events
-    """
-
-    type = models.CharField('Type of Event', max_length=50)
-
-    def __unicode__(self):
-        return self.type

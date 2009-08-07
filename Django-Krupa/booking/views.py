@@ -3,11 +3,11 @@ from django.shortcuts import render_to_response
 import datetime
 
 def upcomming_events(requiest):
-    upcomming_events = Event.objects.filter(date__gte=datetime.date.today())
+    upcomming_events = Event.upcomming_objects.all()
     template = 'upcomming_events.html'
     return render_to_response(template, {'events' : upcomming_events})
 
 def past_events(request):
-    past_events = Event.objects.filter(date__lt=datetime.date.today())
+    past_events = Event.past_objects.all()
     template = 'past_events.html'
     return render_to_response(template, {'events' : past_events})
