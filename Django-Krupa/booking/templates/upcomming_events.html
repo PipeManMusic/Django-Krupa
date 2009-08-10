@@ -1,5 +1,31 @@
 {% load humanize %}
 {% for event in events %}
-{{ event.title }}
-{{ event.date|naturalday }}
+    Date: {{ event.date|naturalday }}
+    Title: {{ event.title }}
+    Type: {{ event.type }}
+    Location: {{ event.location }}
+    Address:{{ event.street1 }}
+    {% if event.street2 %}
+        {{ event.street2 }}
+    {% endif %}
+    {{ event.city }},{{ event.state }}{{ event.zip }}
+    {% if event.price %}
+    ${{ event.price }}
+    {% endif %}
+    {% if event.note %}
+        {{ event.note %}
+    {% endif %}
+    {% if event.contact or event.phone %}
+        For more info contact:
+    {% endif %}
+    {% if event.contact %}
+        {{ event.contact }}
+    {% endif %}
+    {% if event.phone %}
+        {{ event.phone }}
+    {% endif %}
+    {% if event.link %}
+        <a htrf="{{ event.link }}">Link</a>
+    {% endif %}
+    <a href="{{ event.get_map }}">Map</a>
 {% endfor %}
