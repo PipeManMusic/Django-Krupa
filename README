@@ -1,1 +1,14 @@
-test
+Django-Krupa
+
+Desctiption:
+    Django-Krupa is a project to create a rich full featured CMS for Musicians and Bands to take their career to the next level and/or remain independent.
+
+Status:
+    The project is still in early stages of development. Current work is on getting eash app to work.
+
+Dependancies:
+    Django SVN
+
+License:
+    This software is released under the terms of the GPL v3.0.
+
