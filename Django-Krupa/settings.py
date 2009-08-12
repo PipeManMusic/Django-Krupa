@@ -9,11 +9,11 @@ ADMINS = (
 
 MANAERS = ADMINS
 
-DATABASE_ENGINE = 'mysql'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = 'pipemanmusic_dw'             # Or path to database file if using sqlite3.
-DATABASE_USER = 'pipemanmusic_dw'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'xiMtq4cBSxaV15'         # Not used with sqlite3.
-DATABASE_HOST = '174.133.21.106'             # Set to empty string for localhost. Not used with sqlite3.
+DATABASE_ENGINE = ''           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+DATABASE_NAME = ''             # Or path to database file if using sqlite3.
+DATABASE_USER = ''             # Not used with sqlite3.
+DATABASE_PASSWORD = ''         # Not used with sqlite3.
+DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
 DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
 
 # Local time zone for this installation. Choices can be found here:
@@ -45,10 +45,10 @@ MEDIA_URL = ''
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".
-ADMIN_MEDIA_PREFIX = '/media/'
+ADMIN_MEDIA_PREFIX = ''
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '+xm5e6@-3tdm)1%)rp$kf4i)y+sbtx^-q%qisk+35+exm50ycl'
+SECRET_KEY = ''
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -63,11 +63,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'danielworth.urls'
+ROOT_URLCONF = ''
 
 TEMPLATE_DIRS = (
-    '/home/pipemanmusic/webapps/danielworth/danielworth/templates',
-
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -81,6 +79,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.humanize',
-    'danielworth.booking',
-    'danielworth.discography',
+    'Django-Krupa.booking',
+    'Django-Krupa.discography',
 )
